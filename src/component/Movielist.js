@@ -1,7 +1,7 @@
 import React from 'react'
 import Moviecard from './Moviecard'
 
- function Movielist({movies,name,rating}) {
+ function Movielist({movies,name,rating,trails}) {
 
   return (
     <div> 

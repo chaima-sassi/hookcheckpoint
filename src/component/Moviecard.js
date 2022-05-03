@@ -1,7 +1,10 @@
 import React from 'react'
 import './Moviecard.css'
 import ReactStars from "react-rating-stars-component";
+import {useNavigate} from 'react-router-dom';
+
 function Moviecard({el}) {
+	const navigate = useNavigate()
   
   return (
     <div> <div class="wrapper">
@@ -19,7 +22,7 @@ function Moviecard({el}) {
 				<a href="https://www.imdb.com/title/tt4912910/" target="_blank">Read More</a>
 			<div class="social-btn">
       
-				<button>
+				<button onClick={()=>navigate(`/movies/trailer/${el.id}`)}>
 					<i class="fas fa-play"></i> SEE TRAILER
 				</button>
 				
